@@ -44,9 +44,9 @@ const prefix = '#' //البريفكس أو امر التشغيل
               };
               message.channel.send('**لديك __15__ ثانيه لتفكيك الكلمه**').then(msg => {
 
- const w = ['./img/w1.png'];//الخلفيه
+ const w = ['./assets/w1.png'];//الخلفيه
             let Image = Canvas.Image,
-            canvas = new Canvas(400, 150),
+            canvas = new Canvas(450, 200),
             ctx = canvas.getContext('2d');
     
             fs.readFile(`${w[Math.floor(Math.random() * w.length)]}`, function (err, Background) {
@@ -54,7 +54,7 @@ const prefix = '#' //البريفكس أو امر التشغيل
             let BG = Canvas.Image;
             let ground = new Image;
             ground.src = Background;
-            ctx.drawImage(ground, 0, 0, 400, 150);
+            ctx.drawImage(ground, 0, 0, 450, 250);
  
 });
  let url = message.author.displayAvatarURL.endsWith(".webp") ? message.author.displayAvatarURL.slice(5, -20) + ".png" : message.author.displayAvatarURL;
@@ -579,7 +579,7 @@ let embed = new Discord.RichEmbed()
 
 🎮 - ${prefix}rkb
 
-🎮 - ${prefix}type
+🎮 - ${prefix}fast
 
 🎮 - ${prefix}math
 
